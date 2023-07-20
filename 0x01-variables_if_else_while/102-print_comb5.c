@@ -9,44 +9,36 @@
  */
 int main(void)
 {
-	int i; /*, j, k, l;*/
+	int i, j;
+	int a, b, c, d;
 
-	for (i = '0'; i <= '9'; i++)
+	for (i = 0; i < 100; i++)
 	{
-		putchar(i);
-		putchar(44);
-		putchar(32);
-		putchar(i);
-		putchar('\n');
-		putchar(44);
-		putchar(32);
-		/*for (j = '0'; j < '9'; j++)
-		{
-			for (k = i; k <= '9'; k++)
-			{
-				for (l = '0'; l <= '9'; l++)
-				{
-					putchar(i);
-					putchar(j);
-					putchar(32);
-					putchar(k);
-					putchar(l);
+		a = i / 10; /* doubles fnum */
+		b = i % 10; /* singles fnum */
 
-					*making sure not to print ', ' after the last combination*
-					if ((i == '9') && (j == '8'))
-					{
-						continue;
-					}
-					else
-					{
-						putchar(44);
-						putchar(32);
-					}
+		for (j = 0; j < 100; j++)
+		{
+			c = j / 10; /* doubles snum */
+			d = j % 10; /* singles snum */
+
+			if (a < c || (a == c && b < d))
+			{
+				putchar(a + '0');
+				putchar(b + '0');
+				putchar(32);
+				putchar(c + '0');
+				putchar(d + '0');
+
+				if (!(a == 9 && b == 8))
+				{
+					putchar(44);
+					putchar(32);
 				}
 			}
-		}*/
+		}
 	}
-	putchar('\n');
+	putchar(10);
 
 	return (0);
 }
