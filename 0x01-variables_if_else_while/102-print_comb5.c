@@ -9,15 +9,22 @@
  */
 int main(void)
 {
-	int i, j, k, l;
+	int i; /*, j, k, l;*/
 
 	for (i = '0'; i <= '9'; i++)
 	{
-		for (j = '0'; j < '9'; j++)
+		putchar(i);
+		putchar(44);
+		putchar(32);
+		putchar(i);
+		putchar('\n');
+		putchar(44);
+		putchar(32);
+		/*for (j = '0'; j < '9'; j++)
 		{
 			for (k = i; k <= '9'; k++)
 			{
-				for (l = j + 1; l <= '9'; l++)
+				for (l = '0'; l <= '9'; l++)
 				{
 					putchar(i);
 					putchar(j);
@@ -25,7 +32,7 @@ int main(void)
 					putchar(k);
 					putchar(l);
 
-					/*making sure not to print ', ' after the last combination*/
+					*making sure not to print ', ' after the last combination*
 					if ((i == '9') && (j == '8'))
 					{
 						continue;
@@ -37,7 +44,7 @@ int main(void)
 					}
 				}
 			}
-		}
+		}*/
 	}
 	putchar('\n');
 
