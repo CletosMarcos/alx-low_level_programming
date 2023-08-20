@@ -2,7 +2,7 @@
 
 /**
  * _abs - compute the absolute value of an integer
- *
+ * @n: integer to be computed
  * Return: abs
  */
 
@@ -17,5 +17,5 @@ int _abs(int n)
 	else
 		abs = 0 - n;
 
-	return abs;
+	return (abs);
 }
