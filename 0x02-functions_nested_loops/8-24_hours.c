@@ -16,7 +16,7 @@ void jack_bauer(void)
 
 		while (j <= 9)
 		{
-			if (i == 2 && j <= 3)
+			if (i != 2 || j <= 3)
 			{
 				k = 0;
 
