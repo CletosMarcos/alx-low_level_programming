@@ -30,21 +30,13 @@ void times_table(void)
 			}
 			else
 			{
+				_putchar(' ');
 				_putchar('0' + res);
 			}
 			if (j != 9)
 			{
-				if (res == 0)
-				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-				}
-				else
-				{
-					_putchar(',');
-					_putchar(' ');
-				}
+				_putchar(',');
+				_putchar(' ');
 			}
 			
 			j++;
