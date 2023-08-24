@@ -11,12 +11,12 @@ int main(void)
 {
 	int sum = 0, aux = 1, aux2 = 1, i, term;
 
-	while (i < 30)
+	while (i < 50)
 	{
 		term = aux + aux2;
 		if (term % 2 == 0)
 			sum += term;
-		if (sum <= 4000000)
+		if (term <= 4000000)
 		{
 			aux = aux2;
 			aux2 = term;
