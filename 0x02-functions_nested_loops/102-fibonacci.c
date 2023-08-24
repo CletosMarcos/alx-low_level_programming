@@ -17,7 +17,7 @@ int main(void)
 	{
 		res = aux + aux2;
 		(count == 49) ?
-			printf(",%li", res) :
+			printf("%li", res) :
 			printf("%li, ", res);
 		aux = aux2;
 		aux2 = res;
