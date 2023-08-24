@@ -8,14 +8,19 @@
 
 int main(void)
 {
-	int count = 0, aux = 1;
+	int count = 2;
+	long aux = 1, aux2 = 2, res;
+	/*count = 2 considering i'm printing 1 and 2 out of the while loop*/
 
-	while (count <= 50)
+	printf("1, 2, ");
+	while (count <= 49)
 	{
-		aux += count;
-		(count == 50)?
-			printf(",%d", aux):
-			printf("%d, ", aux);
+		res = aux + aux2;
+		(count == 49) ?
+			printf(",%li", res) :
+			printf("%li, ", res);
+		aux = aux2;
+		aux2 = res;
 		count++;
 	}
 	printf("\n");
