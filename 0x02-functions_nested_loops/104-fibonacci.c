@@ -13,10 +13,10 @@ int main(void)
         /*count = 2 considering i'm printing 1 and 2 out of the while loop*/
 
         printf("1, 2, ");
-        while (count <= 97)
+        while (count <= 7)
         {
                 res = aux + aux2;
-                (count == 97) ?
+                (count == 7) ?
                         printf("%lu", res) :
                         printf("%lu, ", res);
                 aux = aux2;
