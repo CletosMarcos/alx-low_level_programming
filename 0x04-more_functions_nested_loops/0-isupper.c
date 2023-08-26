@@ -12,7 +12,7 @@ int _isupper(int c)
 	/*int ch = 'A', ret;*/
 	int ret;
 
-	if (c >= 'A' && c<= 'Z')
+	if (c >= 'A' && c <= 'Z')
 		ret = 1;
 	else if (c >= 'a' && c <= 'z')
 		ret = 0;
