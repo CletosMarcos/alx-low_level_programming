@@ -18,7 +18,7 @@ int _isupper(int c)
 			ret = 1;
 			break;
 		}
-		else
+		else if (c >= 'a' || c <= 'z')
 		{
 			ret = 0;
 			break;
