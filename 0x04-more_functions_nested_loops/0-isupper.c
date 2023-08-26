@@ -14,7 +14,7 @@ int _isupper(int c)
 
 	if (c >= 'A' && c <= 'Z')
 		ret = 1;
-	else if (c >= 'a' && c <= 'z')
+	else
 		ret = 0;
 	return (ret);
 }
