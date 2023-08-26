@@ -9,19 +9,20 @@
 int _isupper(int c)
 {
 
-	int ch = 'A';
+	int ch = 'A', ret;
 
 	while (ch <= 'Z')
 	{
 		if (ch == c)
 		{
-			return (1);
+			ret = 1;
 			break;
 		}
 		else
 		{
-			return (0);
+			ret = 0;
 			break;
 		}
 	}
+	return (ret);
 }
