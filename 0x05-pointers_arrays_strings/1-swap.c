@@ -3,7 +3,7 @@
 /**
  * swap_int - swap the values of two Integers
  * @a: 1st value
- * @b 2nd value
+ * @b: 2nd value
  * Return: Nothing
  */
 
