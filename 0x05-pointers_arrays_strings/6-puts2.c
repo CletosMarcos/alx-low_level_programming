@@ -2,7 +2,7 @@
 
 /**
  * puts2 - Prints characters in odd positions on a string
- * @str: string 
+ * @str: string
  * Return: Nothing
  */
 
